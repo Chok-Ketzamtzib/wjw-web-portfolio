@@ -1,0 +1,45 @@
+# Site settings
+title: William Wakefield
+email: your.email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Software Engineer specializing in C++ development with experience in
+  embedded systems, performance optimization, and cross-platform development.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Social media usernames (without @)
+github_username: willwake
+linkedin_username: william-wakefield
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:name/
+
+# Navigation
+navigation:
+  - title: Home
+    url: /
+  - title: About
+    url: /about/
+  - title: Projects
+    url: /projects/
+  - title: Contact
+    url: /contact/
